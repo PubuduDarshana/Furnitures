@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 // Variables
 $primary-color: #333333;
 $secondary-color: #054c73;
@@ -87,7 +93,7 @@ nav {
   background-color: #dfe9f4;
   display: flex;
   align-items: center;
-  margin-right: 6.6rem;
+  margin-right: 8%;
 
   .firstP {
     font-family: $font-family;
@@ -131,7 +137,6 @@ nav {
 //emblem strip starts
 
 .strip {
-  height: 150px;
   width: 100%;
   background-color: $tertiary-color;
   display: flex;
@@ -166,10 +171,12 @@ nav {
 //collection section starts
 
 .collection {
-  height: 100vh;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
 
   .content {
-    margin-top: 3.75rem;
+    padding-top: 3.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,27 +202,24 @@ nav {
   }
 
   .images {
-    margin-top: 50px;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
-    height: 29.5rem;
     align-items: flex-end;
     gap: 2rem;
 
     .image-one {
-      width: 22.1875rem;
+      width: 20rem;
       height: 27.125rem;
     }
 
     .image-two {
-      width: 22.1875rem;
+      width: 20rem;
       height: 27.125rem;
-      position: relative;
-      top: -38px;
     }
 
     .image-three {
-      width: 22.1875rem;
+      width: 20rem;
       height: 27.125rem;
     }
   }
@@ -224,8 +228,8 @@ nav {
 //beautify section starts
 
 .beautify {
-  height: 100vh;
   width: 100%;
+  height: auto;
   background-color: $tertiary-color;
   display: flex;
   justify-content: space-around;
@@ -261,36 +265,35 @@ nav {
   }
 
   .picture {
-    position: relative;
 
     img {
-      width: 31.25rem;
-      height: 47.125rem;
+      width: auto;
+      height: 500px;
       z-index: 1;
-      position: relative;
       border-radius: 4rem 0 4rem 0;
     }
 
-    .circle {
-      width: 23.25rem;
-      height: 23.25rem;
-      background-color: #09513b;
-      border-radius: 50%;
-      position: absolute;
-      top: 25%;
-      left: 40%;
-      z-index: 0;
-    }
+    // .circle {
+    //   width: 23.25rem;
+    //   height: 23.25rem;
+    //   background-color: #09513b;
+    //   border-radius: 50%;
+    //   position: absolute;
+    //   top: 25%;
+    //   left: 40%;
+    //   z-index: 0;
+    // }
   }
 }
 
 //browse starts
 
 .browse {
-  height: 800px;
+  height: auto;
+  width: 100%;
 
   .content {
-    margin-top: 60px;
+    padding-top: 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -320,6 +323,11 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      img{
+        width: 21rem;
+        height: auto;
+      }
     }
 
     p {
@@ -335,7 +343,8 @@ nav {
 //how it works starts
 
 .howit {
-  height: 100vh;
+  height: auto;
+  width: 100%;
 
   .content {
     margin-top: 60px;
@@ -368,6 +377,11 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
+      
+      img{
+        width: 21rem;
+        height: auto;
+      }
     }
 
     h6 {
@@ -445,7 +459,7 @@ nav {
 //footer
 
 .footer {
-  height: 386px;
+  height: auto;
   width: 100%;
   background-color: $secondary-color;
   color: #fff;

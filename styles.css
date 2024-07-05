@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -66,7 +72,7 @@ nav .container #navbarNav a {
   background-color: #dfe9f4;
   display: flex;
   align-items: center;
-  margin-right: 6.6rem;
+  margin-right: 8%;
 }
 .landingDesc .firstP {
   font-family: "Montserrat", sans-serif;
@@ -104,7 +110,6 @@ nav .container #navbarNav a {
 }
 
 .strip {
-  height: 150px;
   width: 100%;
   background-color: #f2f5ff;
   display: flex;
@@ -133,10 +138,12 @@ nav .container #navbarNav a {
 }
 
 .collection {
-  height: 100vh;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
 }
 .collection .content {
-  margin-top: 3.75rem;
+  padding-top: 3.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,31 +165,28 @@ nav .container #navbarNav a {
   justify-content: center;
 }
 .collection .images {
-  margin-top: 50px;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  height: 29.5rem;
   align-items: flex-end;
   gap: 2rem;
 }
 .collection .images .image-one {
-  width: 22.1875rem;
+  width: 20rem;
   height: 27.125rem;
 }
 .collection .images .image-two {
-  width: 22.1875rem;
+  width: 20rem;
   height: 27.125rem;
-  position: relative;
-  top: -38px;
 }
 .collection .images .image-three {
-  width: 22.1875rem;
+  width: 20rem;
   height: 27.125rem;
 }
 
 .beautify {
-  height: 100vh;
   width: 100%;
+  height: auto;
   background-color: #f2f5ff;
   display: flex;
   justify-content: space-around;
@@ -212,32 +216,19 @@ nav .container #navbarNav a {
   margin-top: 20px;
   cursor: pointer;
 }
-.beautify .picture {
-  position: relative;
-}
 .beautify .picture img {
-  width: 31.25rem;
-  height: 47.125rem;
+  width: auto;
+  height: 500px;
   z-index: 1;
-  position: relative;
   border-radius: 4rem 0 4rem 0;
-}
-.beautify .picture .circle {
-  width: 23.25rem;
-  height: 23.25rem;
-  background-color: #09513b;
-  border-radius: 50%;
-  position: absolute;
-  top: 25%;
-  left: 40%;
-  z-index: 0;
 }
 
 .browse {
-  height: 800px;
+  height: auto;
+  width: 100%;
 }
 .browse .content {
-  margin-top: 60px;
+  padding-top: 60px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -265,6 +256,10 @@ nav .container #navbarNav a {
   flex-direction: column;
   align-items: center;
 }
+.browse .images .image img {
+  width: 21rem;
+  height: auto;
+}
 .browse .images p {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -274,7 +269,8 @@ nav .container #navbarNav a {
 }
 
 .howit {
-  height: 100vh;
+  height: auto;
+  width: 100%;
 }
 .howit .content {
   margin-top: 60px;
@@ -304,6 +300,10 @@ nav .container #navbarNav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.howit .images .image img {
+  width: 21rem;
+  height: auto;
 }
 .howit .images h6 {
   font-family: "Montserrat", sans-serif;
@@ -365,7 +365,7 @@ nav .container #navbarNav a {
 }
 
 .footer {
-  height: 386px;
+  height: auto;
   width: 100%;
   background-color: #054c73;
   color: #fff;
